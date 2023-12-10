@@ -259,3 +259,37 @@
   .additional-info__languages-item {
     color: var(--secondary-text-color);
   }
+      
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: #333;
+    transform: translateX(-50%);
+  }
+
+  .event {
+    position: relative;
+    margin: 50px 0;
+  }
+
+  .event::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
